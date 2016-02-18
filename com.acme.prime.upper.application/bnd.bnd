@@ -1,0 +1,24 @@
+#
+#  APPLICATION
+#
+
+Bundle-Version: 1.0.0.${tstamp}
+Bundle-Description: My OSGi Enroute bundle
+
+Private-Package:  \
+	com.acme.prime.upper.application
+
+EnRoute-Application: 	com.acme.prime.upper
+JPM-Command:			upper
+
+-includeresource: \
+	{readme.md}, \
+	{configuration=configuration}, \
+	{static=static}, \
+	web=web
+
+-buildpath: \
+	osgi.enroute.base.api
+	
+-testpath: \
+	osgi.enroute.junit.wrapper;version=4.12
