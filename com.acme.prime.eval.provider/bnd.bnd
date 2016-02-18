@@ -4,7 +4,7 @@
 
 
 Bundle-Version:					1.0.0.${tstamp}
-Bundle-Description: The implementation module
+Bundle-Description: The implementation module. Updated.
 
 Private-Package: \
 	com.acme.prime.eval.provider,\
